@@ -42,10 +42,9 @@
 		</div>
 		<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
 		<script type="text/javascript">
-		$(function() {
-			var targets = $('.as_product').children(), winHeight = $(window).height();
-			$(window).scroll(function() {
-				var win = this;
+		$(function($, win, doc, undefined) {
+			var targets = $('.as_product').children(), winHeight = $(win).height();
+			$(win).scroll(function() {
 				targets.each(function() {
 					var _this = $(this),
 						top = _this.offset().top,
@@ -54,8 +53,13 @@
 						_this.addClass('animated');
 					}
 				});
+				
+				//arrive bottom
+				if ($(doc).scrollTop() + winHeight >= $(doc).height() && !target.last().is('.animated')) {
+					target.last().addClass('animated');
+				}
 			});
-		});
+		}(jQuery, window, document));
 		</script>
 	</body>
 </html>
