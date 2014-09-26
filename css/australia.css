@@ -89,7 +89,7 @@
 }
 
 #australia {background-color: #fff;}
-.main {position: relative;width: 600px;margin: 0 auto;height: 5093px;background: url(../img/bg.jpg) no-repeat center;}
+.main {position: relative;max-width: 600px;margin: 0 auto;height: 5093px;background: url(../img/bg.jpg) no-repeat center;}
 .cloud {position: absolute;width: 162px;height: 87px;background: url(../img/cloud.png) no-repeat;top: 30px;left: 100px;-webkit-animation: flying 12s linear 0.5s infinite;-moz-animation: flying 12s linear 0.5s infinite;-o-animation: flying 12s linear 0.5s infinite;-ms-animation: flying 12s linear 0.5s infinite;animation: flying 12s linear 0.5s infinite;}
 .sun {position: absolute;width: 248px;height: 148px;top: 0;right: 15px;background: url(../img/sun.png) no-repeat;-webkit-animation: shining 2s ease-out 0.5s infinite;-moz-animation: shining 2s ease-out 0.5s infinite;-o-animation: shining 2s ease-out 0.5s infinite;-ms-animation: shining 2s ease-out 0.5s infinite;animation: shining 2s ease-out 0.5s infinite;}
 .sun_core {position: absolute;width: 84px;height: 58px;background: url(../img/sun-core.png) no-repeat;top: 0;left: 417px;}
